@@ -12,7 +12,7 @@ public class Kopi {
 	}
 	
 	public String getPembeli() {
-		return this.pembeli;
+		return pembeli;
 	}
 	
 	public double getPajak() {
