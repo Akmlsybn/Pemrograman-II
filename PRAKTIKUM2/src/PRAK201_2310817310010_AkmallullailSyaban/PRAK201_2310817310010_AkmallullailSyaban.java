@@ -27,6 +27,7 @@ class buahBuahan {
 		System.out.printf("Harga Sebelum Diskon: Rp%.2f\n",Sebelumdiskon());
 		System.out.printf("Total Diskon: Rp%.2f\n", hargaTotalDiskon());	
 		System.out.printf("Harga Setelah Diskon: Rp%.2f\n", sesudahDiskon());
+		System.out.println();
 	}
 }
 
