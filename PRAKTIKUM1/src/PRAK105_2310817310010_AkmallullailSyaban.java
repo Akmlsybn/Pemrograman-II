@@ -17,6 +17,7 @@ public class PRAK105_2310817310010_AkmallullailSyaban {
 		System.out.printf("Volume tabung dengan jari-jari %.1f cm dan%n", jarijari);
 		System.out.printf("tinggi %.1f cm adalah %.3f m3%n", tinggi, volume);
 		
+		input.close();
 	}
 
 }

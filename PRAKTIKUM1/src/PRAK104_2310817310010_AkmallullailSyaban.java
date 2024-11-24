@@ -32,5 +32,6 @@ public class PRAK104_2310817310010_AkmallullailSyaban {
         } else {
             System.out.println("Seri");
         }
+        input.close();
     }
 }
