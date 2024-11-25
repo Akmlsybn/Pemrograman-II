@@ -31,7 +31,6 @@ public class Main {
             Negara negara = new Negara(nama, jenisKepemimpinan, namaPemimpin, tanggalKemerdekaan, bulanKemerdekaan, tahunKemerdekaan);
             objekNegara.add(negara);
         }
-        System.out.println("\nInformasi negara:");
         for (int i = 0; i < objekNegara.size(); i++) {
             Negara daftarNegara = objekNegara.get(i);
             daftarNegara.info();
