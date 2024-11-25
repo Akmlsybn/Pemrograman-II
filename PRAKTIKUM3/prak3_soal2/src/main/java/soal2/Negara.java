@@ -10,7 +10,7 @@ class Negara {
     private int bulanKemerdekaan;
     private int tahunKemerdekaan;
 
-    public Negara(String nama, String jenisKepemimpinan, String namaPemimpin, int tanggalKemerdekaan, int bulanKemerdekaan, int tahunKemerdekaan) {
+    Negara (String nama, String jenisKepemimpinan, String namaPemimpin, int tanggalKemerdekaan, int bulanKemerdekaan, int tahunKemerdekaan) {
         this.nama = nama;
         this.jenisKepemimpinan = jenisKepemimpinan;
         this.namaPemimpin = namaPemimpin;
