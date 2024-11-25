@@ -2,7 +2,7 @@ package soal2;
 
 import java.util.HashMap;
 
-public class Negara {
+class Negara {
     private String nama;
     private String jenisKepemimpinan;
     private String namaPemimpin;
