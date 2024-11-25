@@ -10,6 +10,12 @@ class Negara {
     private int bulanKemerdekaan;
     private int tahunKemerdekaan;
 
+    Negara (String nama, String jenisKepemimpinan, String namaPemimpin) {
+        this.nama = nama;
+        this.jenisKepemimpinan = jenisKepemimpinan;
+        this.namaPemimpin = namaPemimpin;
+    }
+    
     Negara (String nama, String jenisKepemimpinan, String namaPemimpin, int tanggalKemerdekaan, int bulanKemerdekaan, int tahunKemerdekaan) {
         this.nama = nama;
         this.jenisKepemimpinan = jenisKepemimpinan;
@@ -36,9 +42,11 @@ class Negara {
     }
 
     public void info (){
-        System.out.println("Negara " + nama + " mempunyai " + jenisKepemimpinan + " bernama " + namaPemimpin);
         if (!jenisKepemimpinan.equalsIgnoreCase("monarki")){
+            System.out.println("Negara " + nama + " mempunyai " + jenisKepemimpinan + " bernama " + namaPemimpin);
             System.out.println("Deklarasi Kemerdekaan pada Tanggal " + tanggalKemerdekaan + " " + namaBulan.get(bulanKemerdekaan) + " " + tahunKemerdekaan);
+        } else {
+            System.out.println("Negara " + nama + " mempunyai Raja bernama " + namaPemimpin);
         }
         System.out.println();
     }

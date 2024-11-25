@@ -19,16 +19,19 @@ public class Main {
 
             String namaPemimpin = Scanner.nextLine();
 
-            int tanggalKemerdekaan = 0, bulanKemerdekaan = 0, tahunKemerdekaan = 0;
-
             if (!jenisKepemimpinan.equalsIgnoreCase("monarki")) {
-                tanggalKemerdekaan = Scanner.nextInt();
-                bulanKemerdekaan = Scanner.nextInt();
-                tahunKemerdekaan = Scanner.nextInt();
+                int tanggalKemerdekaan = Scanner.nextInt();
+                int bulanKemerdekaan = Scanner.nextInt();
+                int tahunKemerdekaan = Scanner.nextInt();
                 Scanner.nextLine();
-            }
-            Negara negara = new Negara(nama, jenisKepemimpinan, namaPemimpin, tanggalKemerdekaan, bulanKemerdekaan, tahunKemerdekaan);
+                Negara negara = new Negara(nama, jenisKepemimpinan, namaPemimpin, tanggalKemerdekaan, bulanKemerdekaan, tahunKemerdekaan);
             objekNegara.add(negara);
+            } 
+            else 
+            {
+            Negara negaraMonarki = new Negara(nama, jenisKepemimpinan, namaPemimpin);
+            objekNegara.add(negaraMonarki);
+            }
         }
         for (int i = 0; i < objekNegara.size(); i++) {
             Negara daftarNegara = objekNegara.get(i);
