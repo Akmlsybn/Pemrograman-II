@@ -9,7 +9,6 @@ public class Main {
 
         LinkedList<Negara> objekNegara = new LinkedList<>();
 
-        System.out.print("Masukkan jumlah negara : ");
         int jumlahNegara = Scanner.nextInt();
         Scanner.nextLine();
 
