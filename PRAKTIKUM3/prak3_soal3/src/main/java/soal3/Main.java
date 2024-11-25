@@ -20,6 +20,7 @@ public class Main {
 
             System.out.print("Pilihan: ");
             pil = pilihan.nextInt();
+            pilihan.nextLine();
 
             switch (pil) {
                 case 0:
@@ -28,16 +29,16 @@ public class Main {
 
                 case 1:
                     System.out.print("Masukkan Nama Mahasiswa: ");
-                    String nama = pilihan.next();
+                    String nama = pilihan.nextLine();
                     System.out.print("Masukkan NIM Mahasiswa (harus unik): ");
-                    String nim = pilihan.next();
+                    String nim = pilihan.nextLine();
                     mahasiswa.add(new Mahasiswa(nama, nim));
                     System.out.println("Mahasiswa " + nama + " ditambahkan.");
                     break;
             
                 case 2:
                     System.out.print("Masukkan NIM Mahasiswa yang akan dihapus: ");
-                    String nimHapus = pilihan.next();
+                    String nimHapus = pilihan.nextLine();
                     for (int i = 0; i < mahasiswa.size(); i++) {
                         if (mahasiswa.get(i).getNim().equals(nimHapus)) {
                             mahasiswa.remove(i);
@@ -49,7 +50,7 @@ public class Main {
 
                 case 3:
                     System.out.print("Masukkan NIM: ");
-                    String nimCari = pilihan.next();
+                    String nimCari = pilihan.nextLine();
                     for (int i = 0; i < mahasiswa.size(); i++){
                         if(mahasiswa.get(i).getNim().equals(nimCari)){
                             System.out.println("Mahasiswa dengan NIM yang dicari : " + nimCari);
