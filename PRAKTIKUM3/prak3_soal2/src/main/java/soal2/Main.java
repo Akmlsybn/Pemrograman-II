@@ -34,7 +34,7 @@ public class Main {
         System.out.println("\nInformasi negara:");
         for (int i = 0; i < objekNegara.size(); i++) {
             Negara daftarNegara = objekNegara.get(i);
-            objekNegara.get(i).info();
+            daftarNegara.info();
         }
     Scanner.close();
     }
