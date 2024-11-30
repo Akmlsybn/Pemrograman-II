@@ -11,7 +11,7 @@ public class Main {
         System.out.print("Masukkan Ras Hewan Peliharaan: ");
         String rasHewan = input.nextLine();
 
-        HewanPeliharaan hewan = new HewanPeliharaan(rasHewan, namaHewan);
+        HewanPeliharaan hewan = new HewanPeliharaan(namaHewan, rasHewan);
         hewan.display();
         input.close(); 
     }
