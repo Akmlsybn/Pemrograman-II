@@ -12,7 +12,7 @@ public class Main {
         System.out.println("2 = Anjing");
         System.out.print("Masukkan pilihan: ");
         int pilihan = input.nextInt();
-        input.nextLine(); // Membersihkan newline
+        input.nextLine();
 
         if (pilihan == 1) {
             // Input untuk Kucing
@@ -25,9 +25,6 @@ public class Main {
 
             // Membuat objek Kucing
             Kucing kucing = new Kucing(nama, ras, warnaBulu);
-
-            // Menampilkan detail Kucing
-            System.out.println("\nDetail Hewan Peliharaan:");
             kucing.displayKucing();
 
         } else if (pilihan == 2) {
@@ -43,16 +40,11 @@ public class Main {
 
             // Membuat objek Anjing
             Anjing anjing = new Anjing(nama, ras, warnaBulu, kemampuan);
-
-            // Menampilkan detail Anjing
-            System.out.println("\nDetail Hewan Peliharaan:");
             anjing.displayAnjing();
 
         } else {
-            // Pilihan tidak valid
             System.out.println("Pilihan tidak valid.");
         }
-
         input.close();
     }
 }
