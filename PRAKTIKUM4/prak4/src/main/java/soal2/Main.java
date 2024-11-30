@@ -31,8 +31,8 @@ public class Main {
             String ras = input.nextLine();
             System.out.print("Warna Bulu: ");
             String warnaBulu = input.nextLine();
-            System.out.print("Kemampuan (pisahkan dengan koma): ");
-            String[] kemampuan = input.nextLine().split(",\\s*"); // Pisahkan input berdasarkan koma dan spasi
+            System.out.print("Kemampuan: ");
+            String[] kemampuan = input.nextLine().split(",\\s*");
 
             Anjing anjing = new Anjing(nama, ras, warnaBulu, kemampuan);
             anjing.displayAnjing();
