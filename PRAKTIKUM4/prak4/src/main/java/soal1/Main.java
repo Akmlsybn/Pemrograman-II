@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukkan Nama Hewan Peliharaan: ");
+        System.out.print("Nama Hewan Peliharaan: ");
         String namaHewan = input.nextLine();
-        System.out.print("Masukkan Ras Hewan Peliharaan: ");
+        System.out.print("Ras: ");
         String rasHewan = input.nextLine();
 
         HewanPeliharaan hewan = new HewanPeliharaan(namaHewan, rasHewan);
