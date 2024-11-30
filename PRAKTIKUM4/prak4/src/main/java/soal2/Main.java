@@ -14,7 +14,6 @@ public class Main {
         input.nextLine();
 
         if (pilihan == 1) {
-            // Input untuk Kucing
             System.out.print("Nama hewan peliharaan: ");
             String nama = input.nextLine();
             System.out.print("Ras: ");
@@ -22,12 +21,10 @@ public class Main {
             System.out.print("Warna Bulu: ");
             String warnaBulu = input.nextLine();
 
-            // Membuat objek Kucing
             Kucing kucing = new Kucing(nama, ras, warnaBulu);
             kucing.displayKucing();
 
         } else if (pilihan == 2) {
-            // Input untuk Anjing
             System.out.print("Nama hewan peliharaan: ");
             String nama = input.nextLine();
             System.out.print("Ras: ");
@@ -37,7 +34,6 @@ public class Main {
             System.out.print("Kemampuan (pisahkan dengan koma): ");
             String[] kemampuan = input.nextLine().split(",\\s*"); // Pisahkan input berdasarkan koma dan spasi
 
-            // Membuat objek Anjing
             Anjing anjing = new Anjing(nama, ras, warnaBulu, kemampuan);
             anjing.displayAnjing();
 
