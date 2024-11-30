@@ -9,17 +9,9 @@ public class HewanPeliharaan {
         this.ras = r;
     }
 
-    public String getNama() {
-        return nama;
-    }
-    
-    public String getRas() {
-        return ras;
-    }
-
     public void display(){
         System.out.println("Display Hewan Peliharaan:");
-        System.out.println("Nama hewan peliharaanku adalah : " + getNama());
-        System.out.println("Dengan ras : " + getRas());
+        System.out.println("Nama hewan peliharaanku adalah : ");
+        System.out.println("Dengan ras : ");
     }
 }
