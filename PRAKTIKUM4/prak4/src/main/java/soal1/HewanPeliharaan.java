@@ -17,7 +17,7 @@ public class HewanPeliharaan {
         return ras;
     }
 
-    void display(){
+    public void display(){
         System.out.println("Display Hewan Peliharaan:");
         System.out.println("Nama hewan peliharaanku adalah : " + getNama());
         System.out.println("Dengan ras : " + getRas());
