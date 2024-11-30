@@ -1,7 +1,5 @@
 package soal2;
-
-import soal2.Anjing;
-import soal2.Kucing;
+import soal1.HewanPeliharaan;
 
 import java.util.Scanner;
 
