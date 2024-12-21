@@ -14,7 +14,6 @@ public class Tabel extends Application {
         launch(args);
     }
 
-    @Override
     public void start(Stage primaryStage) {
         TableView<Mahasiswa> Tabel = new TableView<>();
 
